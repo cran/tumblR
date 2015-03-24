@@ -17,7 +17,7 @@ function(limit=20,offset=0,type=NA,since_id=0,reblog_info=FALSE,notes_info=FALSE
   if(!(is.logical(notes_info)))
     stop("reblog_info must be a boolean")
   
-  if(class(token)!="Token1.0")
+  if(class(token)[1]!="Token1.0")
     stop("token must be a Token1.0 type")
   
   if(!is.character(consumer_key))

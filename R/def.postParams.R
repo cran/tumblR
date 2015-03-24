@@ -114,7 +114,7 @@ function(type="text",state="published",tags=NA, tweet=NA,
     
     Photo_Params<-list(type=type,state=state,tags=tags, tweet=tweet, 
                              date=date,format=format, slug=slug,
-                             caption=caption_photo,link=link,Source=source_photo,data=data_photo,
+                             caption=caption_photo,link=link,source=source_photo,data=data_photo,
                              id=id,reblog_key=reblog_key,comment=comment,
                              stringsAsFactors=FALSE)
     
@@ -145,7 +145,7 @@ function(type="text",state="published",tags=NA, tweet=NA,
     
     Quote_Params<-list(type=type,state=state,tags=tags, tweet=tweet, 
                              date=date,format=format, slug=slug,
-                             quote=quote,Source=source_quote,
+                             quote=quote,source=source_quote,
                              id=id,reblog_key=reblog_key,comment=comment,
                              stringsAsFactors=FALSE)
     

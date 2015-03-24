@@ -7,7 +7,7 @@ function(limit=20,offset=0,token=NA,consumer_key=NA,consumer_secret=NA){
   if(!is.numeric(offset) || (offset<0 || offset>=21) )
     stop("offset must be a numeric type greater or equal to limit")
   
-  if(class(token)!="Token1.0")
+  if(class(token)[1]!="Token1.0")
     stop("token must be a Token1.0 type")
   
   if(!is.character(consumer_key))

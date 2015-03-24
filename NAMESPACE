@@ -1,4 +1,4 @@
-import(httr, RCurl, ROAuth, stringr, RJSONIO)
+import(httr, RCurl, stringr, RJSONIO)
 export(avatar)
 export(dashboard)
 export(follow)

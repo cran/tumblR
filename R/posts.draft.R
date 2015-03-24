@@ -15,7 +15,7 @@ function(base_hostname=NA,before_id=0,filter="HTML",
       stop("id must be a number")
   }
   
-  if(class(token)!="Token1.0")
+  if(class(token)[1]!="Token1.0")
     stop("token must be a Token1.0 type")
   
   if(!is.character(consumer_key))

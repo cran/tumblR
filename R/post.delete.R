@@ -4,7 +4,7 @@ function(base_hostname=NA,id=NA,token=NA,consumer_key=NA,consumer_secret=NA){
   if(!is.character(base_hostname))
     stop("base_hostname must be a string")
   
-  if(class(token)!="Token1.0")
+  if(class(token)[1]!="Token1.0")
     stop("token must be a Token1.0 type")
   
   if(!is.character(consumer_key))

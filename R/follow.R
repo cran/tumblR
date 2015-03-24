@@ -8,7 +8,7 @@ function(url=NA,token=NA,consumer_key=NA,consumer_secret=NA){
       stop("url must be a string type")
   }
   
-  if(class(token)!="Token1.0")
+  if(class(token)[1]!="Token1.0")
     stop("token must be a Token1.0 type")
   
   if(!is.character(consumer_key))
