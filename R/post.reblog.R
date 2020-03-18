@@ -35,7 +35,7 @@ function(base_hostname=NA, type="text",state="published",tags=NA, tweet=NA,
                              reblog=TRUE,editing=FALSE,
                              id=id,reblog_key=reblog_key,comment=comment)
   
-  url<-paste("http://api.tumblr.com/v2/blog/",base_hostname,"/post/reblog",sep="")
+  url<-paste("https://api.tumblr.com/v2/blog/",base_hostname,"/post/reblog",sep="")
   connection<-"POST"
   
   res<-fromJSON(http.connection(url,token,bodyParams,consumer_key,consumer_secret,connection))

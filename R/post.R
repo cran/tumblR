@@ -22,7 +22,7 @@ function(base_hostname=NA, type="text",state="published",tags=NA, tweet=NA,
   if(!is.character(consumer_secret))
     stop("consumer_secret must be a string")
   
-  url<-paste("http://api.tumblr.com/v2/blog/",base_hostname,"/post",sep="")
+  url<-paste("https://api.tumblr.com/v2/blog/",base_hostname,"/post",sep="")
   connection<-"POST"
   
   bodyParams<-def.postParams(type=type,state=state,tags=tags, tweet=tweet, 

@@ -10,7 +10,7 @@ function(token=NA,consumer_key=NA,consumer_secret=NA){
   if(!is.character(consumer_secret))
     stop("consumer_secret must be a string")
   
-  url<-"http://api.tumblr.com/v2/user/info"
+  url<-"https://api.tumblr.com/v2/user/info"
   connection="GET"
   bodyParams<-list()
   res<-fromJSON(http.connection(url,token,bodyParams,consumer_key,consumer_secret,connection))

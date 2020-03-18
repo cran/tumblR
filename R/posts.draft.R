@@ -24,7 +24,7 @@ function(base_hostname=NA,before_id=0,filter="HTML",
   if(!is.character(consumer_secret))
     stop("consumer_secret must be a string")
   
-  url<-paste("http://api.tumblr.com/v2/blog/",base_hostname,"/posts/draft",sep="")
+  url<-paste("https://api.tumblr.com/v2/blog/",base_hostname,"/posts/draft",sep="")
   connection<-"GET"
   
   Params<-list(before_id=before_id,filter=filter)

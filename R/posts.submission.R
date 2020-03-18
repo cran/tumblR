@@ -5,8 +5,8 @@ function(base_hostname=NA,offset=0,filter="HTML",
   if(!is.character(base_hostname))
     stop("base_hostname must be a string")
   
-  if(!is.numeric(offset) || (offset<0 || offset>=21) )
-    stop("offset must be a numeric type greater or equal to limit")
+  if(!is.numeric(offset))
+    stop("offset must be a numeric type")
   
   filter_type<-c("HTML","text","raw")
   
@@ -25,7 +25,7 @@ function(base_hostname=NA,offset=0,filter="HTML",
   if(!is.character(consumer_secret))
     stop("consumer_secret must be a string")
   
-  url<-paste("http://api.tumblr.com/v2/blog/",base_hostname,"/posts/submission",sep="")
+  url<-paste("https://api.tumblr.com/v2/blog/",base_hostname,"/posts/submission",sep="")
   connection="GET"
   
   Params<-list(offset=offset,filter=filter)

@@ -46,9 +46,9 @@ Andrea Capozio
 consumer_key <-'key'
 consumer_secret <- 'secret'
 appname <- Tumblr_App
-tokenURL <- 'http://www.tumblr.com/oauth/request_token'
-accessTokenURL <- 'http://www.tumblr.com/oauth/access_token'
-authorizeURL <- 'http://www.tumblr.com/oauth/authorize'
+tokenURL <- 'https://www.tumblr.com/oauth/request_token'
+accessTokenURL <- 'https://www.tumblr.com/oauth/acces_token'
+authorizeURL <- 'https://www.tumblr.com/oauth/authorize'
 
 app <- oauth_app(appname, consumer_key, consumer_secret)
 endpoint <- oauth_endpoint(tokenURL, authorizeURL, accessTokenURL)

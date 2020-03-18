@@ -24,7 +24,7 @@ function(id=NA,reblog_key=NA,token=NA,consumer_key=NA,consumer_secret=NA){
       stop("reblog_key must be a string type")
   }
   
-  url<-"http://api.tumblr.com/v2/user/like"
+  url<-"https://api.tumblr.com/v2/user/like"
   bodyParams <- list(id=as.character(id), reblog_key=reblog_key)
   connection<-"POST"
   

@@ -9,7 +9,7 @@ function(base_hostname=NA,size=64){
   if(!(size %in% size_range))
     stop("Avaliable values for size are: 16,24,30,40,48,64,96,128,512")
   
-  url<-GET(paste("http://api.tumblr.com/v2/blog/",base_hostname,"/avatar/",as.character(size),sep=""))
+  url<-GET(paste("https://api.tumblr.com/v2/blog/",base_hostname,"/avatar/",as.character(size),sep=""))
   
   image_url<-url[[1]]
   

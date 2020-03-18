@@ -2,11 +2,11 @@ dashboard <-
 function(limit=20,offset=0,type=NA,since_id=0,reblog_info=FALSE,notes_info=FALSE,
                     token=NA,consumer_key=NA,consumer_secret=NA){
   
-  if(!is.numeric(limit) || (limit<=0 || limit>=21) )
-    stop("limit must be a numeric type beetwen 0 and 20 (inclusive)")
+  if(!is.numeric(limit) || (limit<1 || limit>20) )
+    stop("limit must be a numeric type beetwen 1 and 20 (inclusive)")
   
-  if(!is.numeric(offset) || (offset<0 || offset>=21) )
-    stop("offset must be a numeric type greater or equal to limit")
+  if(!is.numeric(offset))
+    stop("offset must be a numeric type")
   
   if(!is.numeric(since_id))
     stop("since_id must be a number")
@@ -36,7 +36,7 @@ function(limit=20,offset=0,type=NA,since_id=0,reblog_info=FALSE,notes_info=FALSE
     
   }
   
-  url<-"http://api.tumblr.com/v2/user/dashboard"
+  url<-"https://api.tumblr.com/v2/user/dashboard"
   connection<-"GET"
   
   Params<-list(limit=limit,offset=offset,type=type,since_id=since_id,

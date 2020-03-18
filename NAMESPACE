@@ -1,4 +1,5 @@
 import(httr, RCurl, stringr, RJSONIO)
+importFrom("stats", "setNames")
 export(avatar)
 export(dashboard)
 export(follow)

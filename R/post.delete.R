@@ -21,7 +21,7 @@ function(base_hostname=NA,id=NA,token=NA,consumer_key=NA,consumer_secret=NA){
       stop("id must be a number")
   }
   
-  url<-paste("http://api.tumblr.com/v2/blog/",base_hostname,"/post/delete",sep="")
+  url<-paste("https://api.tumblr.com/v2/blog/",base_hostname,"/post/delete",sep="")
   bodyParams <- list(id=as.character(id))
   connection<-"POST"
   

@@ -17,7 +17,7 @@ function(url=NA,token=NA,consumer_key=NA,consumer_secret=NA){
   if(!is.character(consumer_secret))
     stop("consumer_secret must be a string")
   
-  url_post<-"http://api.tumblr.com/v2/user/unfollow"
+  url_post<-"https://api.tumblr.com/v2/user/unfollow"
   bodyParams <- list(url=url)
   connection<-"POST"
   
